@@ -26,7 +26,7 @@
 	?>
 	<hr>
 	<form method="GET">
-		<label for="message">Message : </label>
+		<label for="message">Message. : </label>
 		<input type="text" value="<?=$message?>" name="message" id="message">
 		<label for="size">Size : </label>
 		<input type="number" value="<?=$size?>" name="size" id="size">

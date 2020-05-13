@@ -14,7 +14,7 @@ class InscriptionsController extends ControllerBase{
 	**/
 	public function inscription($name="Nom ou pseudo",$mail="Adresse mail"){
 		
-		$this->loadView('InscriptionsController/inscription.php',compact('name','mail'));
+		$this->loadView('InscriptionsController/inscription.html',compact('name','mail'));
 
 	}
 

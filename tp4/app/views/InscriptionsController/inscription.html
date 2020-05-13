@@ -1,1 +1,25 @@
-<!--View associated to inscription action of InscriptionsController controller -->
+<h1> Inscription</h1>
+<form method ="POST" action ="/inscription/do" >
+<input type="texte" name="Nom ou pseudo">
+<input type="email" mail="Adresse mail">
+<hr>
+<button>Valider l inscription </button> <a href="{{path('Home')}}"</a>
+</form>
+if(empty($name)){
+    $valid = false;
+    $er_name = "Nom rentré faux";
+    <div><?=er_name ?></div>
+    }else{
+    	$valid = true;
+if(empty($mail)){
+	$valid = false;
+	$et_mail = "Mail rentré faux";
+	<div><?=er_mail ?></div>
+	}
+	else{
+		$valid = true;
+if($valid=true){
+	$fnsh = " Vous avez bien envoyé vos information on été enregistré"
+	<<div><?=fnsh?></div>
+}
+

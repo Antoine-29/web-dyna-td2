@@ -1,2 +1,2 @@
 <?php
-return array();
+return array("/_default/"=>array("get"=>array("controller"=>"controllers\\IndexController","action"=>"index","parameters"=>array(),"name"=>"Home","cache"=>false,"duration"=>false)),"/inscription/"=>array("post"=>array("controller"=>"controllers\\InscriptionsController","action"=>"inscription","parameters"=>array(),"name"=>"InscriptionsController-inscription","cache"=>false,"duration"=>false)));

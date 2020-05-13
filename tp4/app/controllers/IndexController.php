@@ -8,12 +8,13 @@ use Ubiquity\themes\ThemesManager;
  * Controller IndexController
  **/
 class IndexController extends ControllerBase{
-
+    /**
+    * @get("_default","name"=>"Home")
+    */
 	public function index(){
 		$defaultPage=Display::getDefaultPage();
 		$links=Display::getLinks();
 		$infos=Display::getPageInfos();
-
 		$activeTheme=ThemesManager::getActiveTheme();
 		$themes=Display::getThemes();
 		if(sizeof($themes)>0){

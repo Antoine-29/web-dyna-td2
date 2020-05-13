@@ -1,0 +1,2 @@
+<?php
+return array("#tableName"=>"inscription","#primaryKeys"=>array("id"),"#manyToOne"=>array(),"#fieldNames"=>array("id"=>"id","nom"=>"nom","email"=>"email","dateHeure"=>"dateHeure"),"#memberNames"=>array("id"=>"id","nom"=>"nom","email"=>"email","dateHeure"=>"dateHeure"),"#fieldTypes"=>array("id"=>"int(11)","nom"=>"varchar(50)","email"=>"varchar(100)","dateHeure"=>"timestamp"),"#nullable"=>array(),"#notSerializable"=>array(),"#transformers"=>array(),"#accessors"=>array("id"=>"setId","nom"=>"setNom","email"=>"setEmail","dateHeure"=>"setDateHeure"));

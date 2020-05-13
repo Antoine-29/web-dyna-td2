@@ -1,10 +1,12 @@
 <h1> Inscription</h1>
+
 <form method ="POST" action ="/inscription/do" >
 <input type="texte" name="Nom ou pseudo">
 <input type="email" mail="Adresse mail">
 <hr>
 <button>Valider l inscription </button> <a href="{{path('Home')}}"</a>
 </form>
+
 if(empty($name)){
     $valid = false;
     $er_name = "Nom rentré faux";

@@ -15,16 +15,3 @@
 <body>
 {% block head %}
 {% endblock %}
-{% extends "main/vBase.html" %}
-{%block body%}
- 	{% for message in messages %}
- 	   <div class = "ui container">	 
- 		<div class="ui header">
- 			{{message.title}}
- 		</div>
- 	{% endfor %}
- 	<div class ="ui segment">
- 		{{content | raw }}
- 	</div>
- 	</div>
- {%endblock%}

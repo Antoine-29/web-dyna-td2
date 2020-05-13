@@ -3,7 +3,6 @@
 		<div class="ui pointing inverted menu">
 		  <div class="header item">
 		    Themes
-		    <h1>Test</h1>
 		  </div>
 		  {% for theme in themes %}
 		  <a class="item {{ activeTheme==theme ? 'active' }}" href="IndexController/ct/{{theme}}">
@@ -13,3 +12,27 @@
 		</div>
 	</div>
 </div>
+{% extends "InscriptionController/index.html" %}
+{%block body%}
+ 	{% for message in messages %}
+ 	   <div class = "ui container">	 
+ 		<div class="ui header">
+ 			{{message.title}}
+ 		</div>
+ 	{% endfor %}
+ 	<div class ="ui segment">
+ 		{{content | raw }}
+ 	</div>
+ 	</div>
+ {%endblock%}
+ 
+ {% extends "InscriptionController/inscription.html" %}
+{%block body%}
+	<div class = ui form>
+		{{message.form}}
+	</div>
+{% endfor %}
+	<div class = ui input>
+		{{content | raw }}
+	</div>
+{%endblock%}
